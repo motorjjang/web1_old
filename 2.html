@@ -1,26 +1,26 @@
 <!doctype html>
 <html>
 <head>
-  <title>WEB1 - CSS</title>
+  <title>WEB - CSS</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="colors.js"></script>
 </head>
 <body>
+  <input type="button" value="night" onclick="nightDayHandler(this)">
   <h1><a href="index.html">WEB</a></h1>
-  <ul>
-    <li><a href="1.html">HTML</a><br></li>
-    <li><a href="2.html">CSS</a><br></li>
-    <li><a href="3.html">JavaScript</a><br></li>
-  </ul>
-  <ol>
-    <li>HTML<br></li>
-    <li>CSS<br></li>
-    <li>JavaScript<br></li>
-  </ol>
-
-  <h2>CSS</h2>
-  <p>CSS는 지속적으로 새로운 버전이 나오고 있다. 1996년에 도입된 CSS 1은 CSS의 바탕이 되었다. CSS의 표준으로는 CSS 2.1이 있으며 이전 버전에 비하여 새로운 기능과 도구가 추가되었다. 대다수의 웹 브라우저는 CSS 2.1를 잘 지원한다.(인터넷 익스플로러의 경우, 버전 7이 되면서 CSS2.1을 지원한다.) 현재 W3C에서는 CSS3을 표준으로 만들고 있다.
-
-CSS는 여러 수준과 프로파일을 가지고 있다. 각 수준의 CSS는 일반적으로 새로운 기능을 담고 있으며 CSS1, CSS2, CSS3, CSS4로 나뉜다. 프로파일들은 일반적으로 특정한 장치나 사용자 인터페이스를 위해 만들어진 하나 이상 수준의 CSS의 하부 집합이다. 현재 휴대용 장치, 프린터, 텔레비전 수상기를 위한 프로파일들이 있다.
-  </p>
-</body>
-</html>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+        <h2>CSS</h2>
+        <p>
+          Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.[1] Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+        </p>
+      </div>
+  </div>
+  </body>
+  </html>

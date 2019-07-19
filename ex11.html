@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Array</h2>
+    <ol>
+    <script type="text/javascript">
+      var arr = ['egoing', 'leezche', 'taeho', 'duru'];
+
+      var i = 0;
+      while (i < arr.length) {
+        document.write('<li>' + arr[i] + '</li>');
+        i++;
+      }
+    </script>
+    </ol>
+
+    <h2>Object</h2>
+    <ol>
+    <script type="text/javascript">
+      var Obj = {
+        "engineer" : "egoing"
+        , "designer" : "leezche"
+        , "farmer" : "taeho"
+        , "math" : "matics"
+        , "array" : arr
+        , func01 : function(){
+          document.write('function in object'+'<br>');
+        }
+        , func02 : function(i, j){
+          document.write((i+j)+'<br>');
+        }
+      }
+
+      for (var key in Obj) {
+        document.write('<li>' + key + ' : ' + Obj[key] + '</li>');
+      }
+
+      document.write(Obj.array[0]);
+      document.write(Obj.func01);
+    </script>
+    </ol>
+
+    <h2>Function</h2>
+    <script type="text/javascript">
+      var func = function(){
+        document.write('function' + '<br>');
+      }
+      func();
+
+      var sum = function(i, j) {
+        document.write((i+j)+'<br>');
+      }
+      sum(2, 5);
+      Obj.func01();
+      Obj.func02(3,5);
+    </script>
+  </body>
+</html>
